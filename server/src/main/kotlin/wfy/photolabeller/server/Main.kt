@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 
     val resource = ClassPathResource("local.properties")
 
-    properties.load(resource.getInputStream())
+    properties.load(resource.inputStream)
    // properties.load(FileInputStream("./server/local.properties"))
 
     val rootPath = Paths.get(properties.getProperty("model_dir"))
