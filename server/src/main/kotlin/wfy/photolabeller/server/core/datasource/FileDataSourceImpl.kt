@@ -66,7 +66,7 @@ class FileDataSourceImpl(private val rootDir: Path): FileDataSource {
     private fun getCurrentRoundJsonFile() = Paths.get(rootDir.toString(), currentRoundFileName).toFile()
 
     // TODO We could have a file name generator and pass it as a dependence to this class
-    // Note that in a real world application this could lead to several updates being named the same
+    // 请注意，在实际应用程序中，这可能导致多个更新被命名为相同的
     private fun generateFileName(): File  {
         val timeStamp = Date().time
         val fileName = "_${timeStamp}_.update"

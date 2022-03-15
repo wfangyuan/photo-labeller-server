@@ -90,7 +90,7 @@ public class FederatedController {
             federatedServer = FederatedServerImpl.Companion.getInstance();
             federatedServer.initialise(repository, updatesStrategy, roundController, logger, properties);
 
-            // We're starting a new round when the server starts
+            // 当服务器启动时，开始新的一轮
             roundController.startRound();
         }
     }
